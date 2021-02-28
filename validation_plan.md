@@ -8,9 +8,7 @@ This software is not intended to replace doctors. It is rather intended to help 
 
 ## How was the training data collected?
 
-The training data is made of MRI brain scans of multiple patients of both genders (male and female) and with different ages.
-
-Once the MRI brain scans are taken, doctors cropped the volumes in which the hippocampuses are located in order to focus of those specific regions. These volumes are called "HippoCrop".
+The data we are using is the "Hippocampus" dataset from the Medical Decathlon competition. This dataset is stored as a collection of NIFTI files, with one file per volume, and one file per corresponding segmentation mask. The original images here are T2 MRI scans of the full brain. In this dataset we are using cropped volumes where only the region around the hippocampus has been cut out.
 
 ## How did you label your training data?
 
