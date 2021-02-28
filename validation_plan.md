@@ -12,18 +12,17 @@ The data we are using is the "Hippocampus" dataset from the Medical Decathlon co
 
 ## How did you label your training data?
 
-All data has been labeled and verified by human experts (radiologists), and with the best effort to mimic the accuracy required for clinical use. The images in the training are labeled by the following convention: - The Anterior part of the Hippocampus is labeled as 1 - The Posterior part of the Hippocampus is labeled as 2 - All other part (the background) is labeled as 0.
+All data has been labeled and verified by human experts (radiologists), and with the best effort to mimic the accuracy required for clinical use. The images in the training are labeled by the following convention: - The Anterior part of the Hippocampus is labeled as 1 - The Posterior part of the Hippocampus is labeled as 2 - All other part (the background) is labeled as 0. The dataset contains the segmentations of the right hippocampus
 
 ## How was the training performance of the algorithm measured and how is the real-world performance going to be estimated?
 
 The training performance was measured by using the Dice coefficient and the Jaccard metric. Here are the results:
 
-mean_dice: 0.8834084001422208<br/>
-mean_jaccard: 0.792622572904947
+mean_dice: 0.8998<br/>
+mean_jaccard: 0.8189
 
 The real-world ground truth can be established by acquiring silver standard of radiologist reading.
 
 ## What data will the algorithm perform well in the real world and what data it might not perform well on?
 
-This software only works with "HippoCrop" volumes, in other words, parts of MRI brain scans which only contain the hippocampus.
-This software will not work well with entire MRI brain scans in which the volume contains all the parts of the brain.
+Since the model has been trained and tested using labels of the cropped volume where only the region around the right hippocampus has been cut out, this software will work with MRI scan in which the volume around the left/right hippocampus is cut out but may not work well with entire MRI brain scans in which the volume contains all the parts of the brain. ???
