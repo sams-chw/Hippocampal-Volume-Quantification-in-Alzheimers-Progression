@@ -1,8 +1,5 @@
 # Quantifying-Hippocampus-Volume-for-Alzheimers-Progression
 3D medical image analysis, segmentation and AI deployment in clinical networks
-<p align="center">
-  ![hippocampus-small](https://user-images.githubusercontent.com/13916713/109415796-f1375c00-7a0e-11eb-98f0-2c209b7b5d48.gif)
-</p>
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/13916713/109415796-f1375c00-7a0e-11eb-98f0-2c209b7b5d48.gif" alt="Sublime's custom image"/>
