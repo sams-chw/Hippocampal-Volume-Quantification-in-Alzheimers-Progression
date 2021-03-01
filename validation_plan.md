@@ -25,4 +25,4 @@ The real-world ground truth can be established by acquiring silver standard of r
 
 ## What data will the algorithm perform well in the real world and what data it might not perform well on?
 
-Since the model has been trained and tested using labels of the cropped volume where only the region around the right hippocampus has been cut out, this software will work with MRI scan in which the volume around the left/right hippocampus is cut out but may not work well with entire MRI brain scans in which the volume contains all the parts of the brain. ???
+The dataset doesn’t have information about age, gender or condition of patients,therefore it is not quite obvious how the performance will vary as per these factors. But generally the model shows a decent performance in measureing the hippocampus volume. The data should perform well in almost all images of human brains with a clear view of the hippocampus.
